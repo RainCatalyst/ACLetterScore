@@ -8,11 +8,11 @@ I use a simple genetic algorithm to maximize the score for a 162 character lette
 ## Best letter
 One of the best letter I've gotten after running it for a while is this:
 ```
- E!.?R??G??C?!E!?C???Ri...D..J??!L??!H!.O.!?W?..K?!?Y!N?
- !I.??F!?E???PB.!?X?!.U!?.M?!.U?!!Y!!O!?!J.?!P?.G?!Z.??T
- ..L.I?!.Sf???W!?!X???F.?.Sa!??V?X..E?.S.?O.?.W!.?P!
+..A...A...A...A...A ...A..A...A..A..A.A...A...A...A ...
+A.A...A...A...A..A..A...A ...A...A...A...A..A..A...A...
+A...A. .A..A...A...A..A...A ...A...A.A...A..A...AA .
 ```
-Which scores a total of **1020 points**.
+Which scores a total of **1120 points**.
 
 *Note that there are no newlines in the original string.*
 ## Usage

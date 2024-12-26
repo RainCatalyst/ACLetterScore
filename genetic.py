@@ -12,7 +12,7 @@ class GeneticAlgorithm:
         self.population_size = population_size
         self.mutation_rate = mutation_rate
         self.elite_size = elite_size
-        self.valid_chars = list(string.ascii_letters + '.!?')
+        self.valid_chars = list(string.ascii_letters + '.!? ') # For optimal score it's enough to leave it as list('A. ')
         
     def create_individual(self):
         return ''.join(random.choice(self.valid_chars) for _ in range(162))
@@ -51,7 +51,7 @@ class GeneticAlgorithm:
             if current_best > best_score:
                 best_score = current_best
                 best_individual = population[scores.index(current_best)]
-                # print(f"Generation {generation}: New best score = {best_score}")
+                print(f"Generation {generation}: New best score = {best_score}")
             
             pop_sorted = [x for _, x in sorted(zip(scores, population), 
                                              key=lambda pair: pair[0],

@@ -8,6 +8,6 @@ if __name__ == "__main__":
         elite_size=2
     )
     
-    best_solution, best_fitness = ga.evolve(get_letter_score, generations=1000)
+    best_solution, best_fitness = ga.evolve(get_letter_score, generations=10000)
     print(f'Best letter: {best_solution}')
-    print(f'Best scor: {best_fitness}')
+    print(f'Best score: {best_fitness}')
